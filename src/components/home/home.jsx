@@ -11,11 +11,11 @@ import {
 
 const Home = () => {
   const [data, setData] = useState([]);
-  // save data to state with use effect
   useEffect(() => {
     setData(info);
   }, [data]);
-  console.log(data);
+
+  
   return (
     <>
       <Header>
@@ -24,13 +24,13 @@ const Home = () => {
       </Header>
 
       <Container>
-        {data.map((item) => (
-          <CardWrapper color={item.color}>
+        {data.map((item => (
+          <CardWrapper key={item.id} color={item.color}>
             <Title>{item.title}</Title>
             <Paragraph>{item.description}</Paragraph>
             <Image src={item.image} />
           </CardWrapper>
-        ))}
+        )))}
       </Container>
     </>
   );
