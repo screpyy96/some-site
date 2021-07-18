@@ -1,9 +1,16 @@
 import styled from 'styled-components';
 
+export const BurgerWrapper = styled.div`
+  display: flex;
+  position sticky;
+  justify-content: flex-end;
+  top: 2rem;
+  right: 20rem;
+  margin-right: 30px;
+`
+
 export const StyledBurger = styled.button`
   position: absolute;
-  top: 5%;
-  right: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -13,7 +20,8 @@ export const StyledBurger = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 10;
+  z-index: 10! important;
+  position:sticky;
 
   &:focus {
     outline: none;
@@ -22,7 +30,7 @@ export const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ open }) => open ? '#0D0C1D' : '#545454'};
+    background: ${({ open }) => open ? 'hsl(234, 12%, 34%)' : 'hsl(234, 12%, 34%)'};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

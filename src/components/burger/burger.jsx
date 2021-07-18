@@ -1,13 +1,15 @@
 import React from 'react';
-import { StyledBurger } from './burger.styled';
+import { StyledBurger, BurgerWrapper } from './burger.styled';
 
 const Burger = ({open, setOpen}) => {
     return (
-        <StyledBurger open={open} onClick={() => setOpen(!open)}>
-            <div/>
-            <div/>
-            <div/>
-        </StyledBurger >
+        <BurgerWrapper >
+            <StyledBurger open={open} onClick={() => setOpen(!open)}>
+                <div/>
+                <div/>
+                <div/>
+            </StyledBurger >
+        </BurgerWrapper>
     );
 };
 
