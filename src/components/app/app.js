@@ -1,9 +1,10 @@
 import React from 'react';
+import Navbar from '../navbar';
 
 const App = () => {
     return (
         <div>
-            asd
+            <Navbar />
         </div>
     );
 };
