@@ -4,7 +4,7 @@ export const StyledMenu = styled.nav`
 display: flex;
 flex-direction: column;
 justify-content: center;
-background: #EFFFFA;
+background: #545454;
 transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
 height: 100vh;
 text-align: left;
@@ -24,7 +24,7 @@ a {
   padding: 2rem 0;
   font-weight: bold;
   letter-spacing: 0.5rem;
-  color: #0D0C1D;
+  color: white;
   text-decoration: none;
   transition: color 0.3s linear;
 
