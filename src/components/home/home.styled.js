@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Header = styled.h1`
   max-width: 500px;
-  margin: 100px auto;
+  margin: 30px auto;
   text-align: center;
   font-weight: 400;
 `;
@@ -14,10 +14,9 @@ export const SubHeader = styled.span`
 `;
 
 export const Paragraph = styled.p`
-color: hsl(299, 6%, 66%)
-font-size: 14px;
-margin: 30px 0
-    
+  color: hsl(299, 6%, 66%);
+  font-size: 14px;
+  margin: 30px 0;
 `;
 export const Image = styled.img`
   width: 100%;
@@ -42,7 +41,7 @@ export const CardWrapper = styled.div`
   }
 
   &:after {
-    content: "";
+    content: '';
     background-color: ${({ color }) => color};
     width: 100%;
     position: absolute;
@@ -69,11 +68,11 @@ export const CardWrapper = styled.div`
   }
 `;
 export const Container = styled.div`
-    flex-wrap: wrap;
-    display: flex;
-    margin: 0 auto
-    max-width: 1120px;
-    justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1520px;
+  justify-content: center;
 `;
 export const Title = styled.h2`
   font-weight: 400;
