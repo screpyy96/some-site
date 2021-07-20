@@ -27,7 +27,7 @@ export const Image = styled.img`
 export const CardWrapper = styled.div`
   background-color: #fff;
   padding: 30px;
-  width: 350px;
+  width: 300px;
   height: 300px;
   margin: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -51,7 +51,7 @@ export const CardWrapper = styled.div`
     height: 5px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 1019px) {
     &:first-child {
       transform: translateY(0);
     }
@@ -59,21 +59,21 @@ export const CardWrapper = styled.div`
       transform: translateY(0);
     }
   }
-  @media (max-width: 1169px) {
-    &:first-child {
-      transform: translateY(0);
+
     }
-    &:nth-child(3) {
-      transform: translateY(0);
-    }
-  }
-`;
-export const Container = styled.div`
-  flex-wrap: wrap;
-  display: flex;
-  margin: 0 auto;
-  max-width: 1520px;
-  justify-content: center;
+    `;
+    export const Container = styled.div`
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: center;
+
+     @media (min-width: 800px) {
+      max-width: 1200px;
+       &:first-child {
+         transform: translateY(0);
+       }
 `;
 export const Title = styled.h2`
   font-weight: 400;

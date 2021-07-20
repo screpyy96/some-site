@@ -7,7 +7,7 @@ justify-content: center;
 background: hsl(234, 12%, 34%);
 transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
 height: 100%;
-position: fixed;
+position: absolute;
 top: 0;
 right: 0;
 overflow: hidden;
@@ -19,6 +19,11 @@ z-index: 1;
   width: 100%;
   font-size: 1.5rem;
   text-align: center;
+  position: fixed;
+}
+@media (min-width: 800px) {
+
+  display: none;
 }
 
 a {
