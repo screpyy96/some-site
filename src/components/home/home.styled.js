@@ -58,7 +58,7 @@ export const CardWrapper = styled.div`
       transform: translateY(0);
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1169px) {
     &:first-child {
       transform: translateY(0);
     }

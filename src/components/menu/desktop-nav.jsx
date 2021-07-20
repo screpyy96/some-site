@@ -3,19 +3,19 @@ import React from "react";
 import Home from '../home/home'
 import About from '../about/about'
 
-import { Logo, StyledLink, Wrapper } from "./desktop.styled";
+import { LinkWrapper, Logo, StyledLink, Wrapper } from "./desktop.styled";
 
-const DesktopNav = ({open}) => {
+const DesktopNav = () => {
   return (
     <div>
-        <Wrapper open={open}>
+        <Wrapper >
         <Logo>LOGO</Logo>
-          <div>
+          <LinkWrapper>
               <StyledLink to="/">Home</StyledLink>
               <StyledLink to="/about">About</StyledLink>
               <StyledLink to="/about">Services</StyledLink>
               <StyledLink to="/about">Contact</StyledLink>
-          </div>
+          </LinkWrapper>
         </Wrapper>
         <Router>
             <Home path="/"/>

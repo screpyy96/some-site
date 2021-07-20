@@ -5,9 +5,11 @@ export const BurgerWrapper = styled.div`
   position: sticky;
   justify-content: flex-end;
   top: 2rem;
-  right: 20rem;
+
   margin-right: 30px;
   z-index: 2;
+
+
 `
 
 export const StyledBurger = styled.button`

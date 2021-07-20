@@ -6,33 +6,31 @@ flex-direction: column;
 justify-content: center;
 background: hsl(234, 12%, 34%);
 transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
-height: 100vh;
-text-align: left;
-padding: 2rem;
-position: absolute;
+height: 100%;
+position: fixed;
 top: 0;
-left: 0;
+right: 0;
+overflow: hidden;
+
 transition: transform 0.3s ease-in-out;
 z-index: 1;
 
-@media (max-width: 576px) {
-    width: 100%;
-  }
+@media (max-width: 800px) {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+}
 
 a {
   font-size: 2rem;
   text-transform: uppercase;
-  padding: 2rem 0;
+  padding: 0
   font-weight: bold;
   letter-spacing: 0.5rem;
   color: white;
   text-decoration: none;
   transition: color 0.3s linear;
-
-  @media (max-width: 576px) {
-    font-size: 1.5rem;
-    text-align: center;
-  }
+  
 
   &:hover {
     color: #343078;

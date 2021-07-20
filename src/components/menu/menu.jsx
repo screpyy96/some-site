@@ -13,6 +13,8 @@ const Menu = ({ open, setOpen }) => {
           Home
         </Link>
         <Link to="/about" >About</Link>
+        <Link to="/about" >Services</Link>
+        <Link to="/about" >Contact</Link>
       </StyledMenu>
       <Router>
         <Home path="/" />
