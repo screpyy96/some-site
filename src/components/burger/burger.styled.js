@@ -5,7 +5,6 @@ export const BurgerWrapper = styled.div`
   position: sticky;
   justify-content: flex-end;
   top: 2rem;
-
   margin-right: 30px;
   z-index: 2;
 

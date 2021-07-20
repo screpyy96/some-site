@@ -2,8 +2,10 @@ import { Router } from "@reach/router";
 import React from "react";
 import Home from '../home/home'
 import About from '../about/about'
+import Services from '../services/services'
 
 import { LinkWrapper, Logo, StyledLink, Wrapper } from "./desktop.styled";
+import Contact from "../contact/contact";
 
 const DesktopNav = () => {
   return (
@@ -13,13 +15,15 @@ const DesktopNav = () => {
           <LinkWrapper>
               <StyledLink to="/">Home</StyledLink>
               <StyledLink to="/about">About</StyledLink>
-              <StyledLink to="/about">Services</StyledLink>
-              <StyledLink to="/about">Contact</StyledLink>
+              <StyledLink to="/services">Services</StyledLink>
+              <StyledLink to="/contact">Contact</StyledLink>
           </LinkWrapper>
         </Wrapper>
         <Router>
-            <Home path="/"/>
-            <About path="/about"/>
+            <Home path="/about"/>
+            <About path="/"/>
+            <Contact path="/contact"/>
+            <Services path="/services"/>
         </Router>
     </div>
   );

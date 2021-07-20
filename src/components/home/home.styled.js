@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Header = styled.h1`
   max-width: 500px;
-  margin: 30px auto;
+  margin: 15px auto;
+  margin-top: 50px;
   text-align: center;
   font-weight: 400;
 `;
