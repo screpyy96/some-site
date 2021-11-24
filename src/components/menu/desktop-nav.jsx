@@ -11,7 +11,7 @@ const DesktopNav = () => {
   return (
     <div>
       <Wrapper>
-        <Logo>LOGO</Logo>
+        <Logo>D&S Detailing Auto</Logo>
         <LinkWrapper>
           <StyledLink to='/'>Home</StyledLink>
           <StyledLink to='/about'>About</StyledLink>

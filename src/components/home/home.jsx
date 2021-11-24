@@ -19,6 +19,7 @@ const Home = () => {
   return (
     <>
       <Hero />
+
       <Header>
         Reliable and efficient, with
         <span style={{ fontWeight: '600' }}> passion for cars.</span>

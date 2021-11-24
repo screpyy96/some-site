@@ -57,19 +57,19 @@ export const CardWrapper = styled.div`
       transform: translateY(0);
     }
   }
-    }
-    `;
+`;
 export const Container = styled.div`
-    flex-wrap: wrap;
-    display: flex;
-    margin: 0 auto;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: center;
+  @media (min-width: 800px) {
     max-width: 1200px;
-    justify-content: center;
-     @media (min-width: 800px) {
-      max-width: 1200px;
-       &:first-child {
-         transform: translateY(0);
-       }
+    &:first-child {
+      transform: translateY(0);
+    }
+  }
 `;
 export const Title = styled.h2`
   font-weight: 400;

@@ -6,16 +6,17 @@ const HeroWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 160vh;
-  width: 100vw;
+  height: 90vh;
+  width: 100%;
   background-image: url(${hero});
   background-position: center;
   background-size: cover;
+
   @media (max-width: 500px) {
     margin-top: -32px;
     display: block;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-image: url(${hero});
   }
 `;
