@@ -40,7 +40,6 @@ export const CardWrapper = styled.div`
   &:nth-child(3) {
     transform: translateY(50%);
   }
-
   &:after {
     content: '';
     background-color: ${({ color }) => color};
@@ -50,7 +49,6 @@ export const CardWrapper = styled.div`
     left: 0;
     height: 5px;
   }
-
   @media (max-width: 1019px) {
     &:first-child {
       transform: translateY(0);
@@ -59,16 +57,14 @@ export const CardWrapper = styled.div`
       transform: translateY(0);
     }
   }
-
     }
     `;
-    export const Container = styled.div`
+export const Container = styled.div`
     flex-wrap: wrap;
     display: flex;
     margin: 0 auto;
     max-width: 1200px;
     justify-content: center;
-
      @media (min-width: 800px) {
       max-width: 1200px;
        &:first-child {

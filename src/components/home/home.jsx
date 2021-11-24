@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-import info from "../../data/data.json";
+import React, { useState, useEffect } from 'react';
+import info from '../../data/data.json';
+import Hero from '../hero/hero';
 import {
   Header,
   Paragraph,
@@ -7,7 +8,7 @@ import {
   Title,
   Image,
   Container,
-} from "./home.styled";
+} from './home.styled';
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -15,22 +16,21 @@ const Home = () => {
     setData(info);
   }, [data]);
 
-  
   return (
     <>
+      <Hero />
       <Header>
         Reliable and efficient, with
-        <span style={{ fontWeight: "600" }}> passion for cars.</span>
+        <span style={{ fontWeight: '600' }}> passion for cars.</span>
       </Header>
-
       <Container>
-        {data.map((item => (
+        {data.map((item) => (
           <CardWrapper key={item.id} color={item.color}>
             <Title>{item.title}</Title>
             <Paragraph>{item.description}</Paragraph>
             <Image src={item.image} />
           </CardWrapper>
-        )))}
+        ))}
       </Container>
     </>
   );
